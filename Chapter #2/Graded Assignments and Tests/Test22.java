@@ -1,0 +1,67 @@
+/*Sophia Colonello
+  11/11/20
+  this program will be the driver program for the chapter 2 test. it will interact witht the fractionclass class. */
+
+  import java.util.Scanner;
+
+  public class Test22
+  {
+	  public static void main(String[] args)
+	  {
+		  //scanner
+		  	Scanner sc = new Scanner(System.in);
+
+		  //variables
+		  	char choice = 'a';
+		  	int num = 0;
+		  	int den = 0;
+
+		  //constructors
+		  	FractionClass2 fraction1 = new FractionClass2();
+		  	FractionClass2 fraction2 = new FractionClass2();
+			FractionClass2 answerFraction = new FractionClass2();
+		  //do while loop
+		  	do
+		  	{
+				//asking the user what they would like to do
+					System.out.println("\nWhat would you like to do: \n\t[E]nter Fractions\n\t[A]dd\n\t[M]ultiply\n\t[Q]uit");
+					System.out.print("\n\n\tEnter: ");
+					choice = sc.nextLine().charAt(0);
+
+				//if statement based of their choice
+					if(choice == 'e' || choice == 'E')
+					{
+						//calling the method to intialize the fraction
+							fraction1.initialize();
+							fraction2.initialize();
+
+					}
+					else if(choice == 'a' || choice == 'A')
+					{
+						//calling the method to add the two fractions
+							answerFraction.add(fraction1,fraction2);
+							answerFraction.reduce(answerFraction);
+							answerFraction.print();
+
+					}
+					else if(choice == 'm' || choice == 'M')
+					{
+						//calling the method to multiply the two fractions
+							answerFraction.multiply(fraction1,fraction2);
+							answerFraction.reduce(answerFraction);
+							answerFraction.print();
+
+					}
+					else if(choice == 'q' || choice == 'Q')
+					{
+						System.out.println("\n\n\n\tThank you for running!\n\n\n\n\n");
+						System.exit(0);
+					}
+
+
+			}
+			while(choice != 'Q' || choice != 'q');
+
+
+	  }
+  }
