@@ -1,0 +1,28 @@
+C:\Users\colonellosr\Downloads\bankingDriver.java:5: error: cannot find symbol
+		BankAccount[] accounts = new BankAccount[100];
+		^
+  symbol:   class BankAccount
+  location: class bankingDriver
+C:\Users\colonellosr\Downloads\bankingDriver.java:5: error: cannot find symbol
+		BankAccount[] accounts = new BankAccount[100];
+		                             ^
+  symbol:   class BankAccount
+  location: class bankingDriver
+C:\Users\colonellosr\Downloads\bankingDriver.java:13: error: cannot find symbol
+		  accounts[1] = new Checking(-100);
+		                    ^
+  symbol:   class Checking
+  location: class bankingDriver
+C:\Users\colonellosr\Downloads\bankingDriver.java:16: error: cannot find symbol
+		  accounts[2] = new Checking(200);
+		                    ^
+  symbol:   class Checking
+  location: class bankingDriver
+C:\Users\colonellosr\Downloads\bankingDriver.java:19: error: cannot find symbol
+		  ((Checking) accounts[2]).writeACheck(50);
+		    ^
+  symbol:   class Checking
+  location: class bankingDriver
+5 errors
+
+Tool completed with exit code 1

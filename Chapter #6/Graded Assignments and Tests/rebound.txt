@@ -1,0 +1,211 @@
+/*Sophia Colonello
+  3/30/21
+  this program will... */
+
+   import java.util.Scanner;
+ 
+   public class Chapter6_Project
+   {
+ 	  public static void main(String[] args)
+ 	  {
+ 		  //store consructor
+ 		  	GroceryStore store = new GroceryStore();
+ 		  	GroceryStore user;
+ 
+ 		  //variables
+ 		  	String person = " ";
+ 
+ 		  //scanner
+ 		  	Scanner sc = new Scanner(System.in);
+ 
+ 		  //asking what you are in a loop
+ 		  	do
+ 		  	{
+ 				//asking them what they are
+ 					System.out.print("\n\n\tAre you a Store Owner or a Customer? Or, would you like to exit: ");
+ 					person = sc.nextLine();
+ 
+ 						//if
+ 							if(person.equalsIgnoreCase("exit"))
+ 								break;
+ 
+ 						//validation
+ 							while(!(person.equalsIgnoreCase("Store Owner") || person.equalsIgnoreCase("Customer")))
+ 							{
+ 								System.out.print("\n\tERROR! Please enter \"Store Owner\" or \"Customer\": ");
+ 								person = sc.nextLine();
+ 							}
+ 
+ 				 //if statement for calls
+ 				 	if(person.equalsIgnoreCase("Store Owner"))
+ 				 	{
+ 				 		user = new StoreOwner();
+ 				 		user.menu();
+ 					}
+ 
+ 			}
+ 			while(!person.equalsIgnoreCase("exit"));
+ 
+ 		 //exit message
+ 		 	System.out.println("\n\n\t\tCome again soon!\n\n\n\n\n\n\n\n\n");
+ 
+ 
+ 	  }
+  }
+  
+  /***************************************************************************************************************************************************
+  
+  /*Sophia Colonello
+    3/30/21
+    this program will... */
+  
+    public abstract class Store
+    {
+  	  //abstract methods
+  	  	public abstract void menu();
+  
+  
+  
+  
+  
+  
+  }
+  
+  /***************************************************************************************************************************************************
+  
+    import java.util.List;
+    import java.util.ArrayList;
+    import java.util.Scanner;
+  
+    public class GroceryStore extends Store
+    {
+  	  //array
+  	  	ArrayList<Product> products = new ArrayList<Product>();
+  
+  	  //constructor
+  	  	public GroceryStore()
+  	  	{
+  			//variables
+  				char next = 'y';
+  				String name = " ";
+  				double price = 0;
+  				int inventory = 0, length = 0, counter = 0;
+  
+  			//scanner
+  				Scanner sc = new Scanner(System.in);
+  
+  			/*asking the max amount of items
+  				System.out.print("\n\tWhat is the maximum number of products allowed in your store (YOU CANNOT CHANGE THIS LATER): ");
+  				length = sc.nextInt();
+  				products = new Product[length]; */
+  
+  			//while loop
+  				//sc.nextLine();
+  				while(next == 'y' /*&& counter < length*/)
+  				{
+  					System.out.print("\nPlease enter your products name: ");
+  					name = sc.nextLine();
+  
+  					System.out.print("\nPlease enter your products price: ");
+  					price = sc.nextDouble();
+  
+  						//validation
+  							while(price < 0 )
+  							{
+  								System.out.print("\n\tERROR! Please enter a proper price: ");
+  								price = sc.nextDouble();
+  							}
+  
+  					System.out.print("\nPlease enter your products inventory: ");
+  					inventory = sc.nextInt();
+  
+  						//validation
+  							while(inventory < 0 )
+  							{
+  								System.out.print("\n\tERROR! Please enter a proper number: ");
+  								inventory = sc.nextInt();
+  							}
+  
+  
+  					products.add(new Product(name, price, inventory)); //what?
+  
+  
+  					sc.nextLine();
+  					counter++;
+  					//if(counter < length)
+  					//{
+  						System.out.print("\n\tAny more products? (y/n): ");
+  						next = sc.nextLine().charAt(0);
+  
+  						//validation
+  							while(next != 'y' && next != 'n')
+  							{
+  								System.out.print("\n\tERROR! Please enter y/n: ");
+  								next = sc.nextLine().charAt(0);
+  							}
+  					//}
+  				}
+  				System.out.println(products);
+  
+  		}
+  		public GroceryStore(int i)
+  		{
+  				System.out.println("\n\t\t\t\tWELCOME TO  K O E G L E R   W O R L D!!!");
+  				System.out.println(getProduct());
+  
+  		}
+  	 	public void menu()
+  	 	{
+  			//scanner
+  				Scanner sc = new Scanner(System.in);
+  
+  			//variables
+  				int choice = 0;
+  
+  			//getting choice
+  				System.out.print("\n\n\t1.Display All Inventory");
+  		}
+  
+  	  //accessor methods
+  	  	public ArrayList<Product> getProduct()
+  	  	{
+  			return products;
+  		}
+  
+  
+  
+  
+  
+  }
+  
+  /*************************************************************************************************************************************************
+  
+    import java.util.Scanner;
+  
+    public class StoreOwner extends GroceryStore
+    {
+  	  //constructor
+  	  	public StoreOwner()
+  	  	{
+  			super(1);
+  		}
+  
+  	 //menu
+  	 	public void menu()
+  	 	{
+  			//super
+  				super.menu();
+  
+  			//scanner
+  				Scanner sc = new Scanner(System.in);
+  
+  			//variables
+  				int choice = 0;
+  
+  			//getting choice
+  				System.out.print("\n\n\t2.Add New Item \n\tEnter choice here: ");
+  				choice = sc.nextInt();
+  		}
+  
+  
+  }
