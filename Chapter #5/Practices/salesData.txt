@@ -1,0 +1,63 @@
+
+
+Division 1 Total Sales: $7,700.00
+Division 2 Total Sales: $7,805.50
+Division 3 Total Sales: $24,100.00
+Division 4 Total Sales: $3,460.00
+Division 5 Total Sales: $19,758.00
+Division 6 Total Sales: $31,500.00
+
+
+Division 1 Difference from Quarter 1 to Quarter 2: $1,000.00
+Division 1 Difference from Quarter 2 to Quarter 3: -$500.00
+Division 1 Difference from Quarter 3 to Quarter 4: $1,700.00
+
+
+Division 2 Difference from Quarter 1 to Quarter 2: -$400.00
+Division 2 Difference from Quarter 2 to Quarter 3: $505.50
+Division 2 Difference from Quarter 3 to Quarter 4: -$405.50
+
+
+Division 3 Difference from Quarter 1 to Quarter 2: $1,000.00
+Division 3 Difference from Quarter 2 to Quarter 3: -$600.00
+Division 3 Difference from Quarter 3 to Quarter 4: $2,300.00
+
+
+Division 4 Difference from Quarter 1 to Quarter 2: -$100.00
+Division 4 Difference from Quarter 2 to Quarter 3: $260.00
+Division 4 Difference from Quarter 3 to Quarter 4: -$360.00
+
+
+Division 5 Difference from Quarter 1 to Quarter 2: $1,855.00
+Division 5 Difference from Quarter 2 to Quarter 3: -$552.00
+Division 5 Difference from Quarter 3 to Quarter 4: -$1,503.00
+
+
+Division 6 Difference from Quarter 1 to Quarter 2: $1,000.00
+Division 6 Difference from Quarter 2 to Quarter 3: -$1,500.00
+Division 6 Difference from Quarter 3 to Quarter 4: -$4,500.00
+
+
+
+
+Quarter 1 sales: $22,200.00
+Quarter 2 sales: $26,555.00
+Quarter 3 sales: $24,168.50
+Quarter 4 sales: $21,400.00
+
+
+Company Difference from Quarter 1 to Quarter 2: $4,355.00
+Company Difference from Quarter 2 to Quarter 3: -$2,386.50
+Company Difference from Quarter 3 to Quarter 4: -$2,768.50
+
+
+The sales average for all divisions for Quarter 1: $3,700.00
+The sales average for all divisions for Quarter 2: $4,425.83
+The sales average for all divisions for Quarter 3: $4,028.08
+The sales average for all divisions for Quarter 4: $3,566.67
+
+
+Division 6 had the highest sales for Quarter 1 with sales of : $9,000.00
+Division 6 had the highest sales for Quarter 2 with sales of : $10,000.00
+Division 6 had the highest sales for Quarter 3 with sales of : $8,500.00
+Division 3 had the highest sales for Quarter 4 with sales of : $7,700.00
